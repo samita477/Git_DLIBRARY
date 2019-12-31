@@ -1,0 +1,898 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{399C80A0-DCDA-4B67-A03C-7D3506BE1014}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DIGITALLIBRARY</RootNamespace>
+    <AssemblyName>DIGITALLIBRARY</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DL\choose_for_login.aspx" />
+    <Content Include="DL\forget_password.aspx" />
+    <Content Include="DL\login.aspx" />
+    <Content Include="DL\homepage.aspx" />
+    <Content Include="DL\add_book.aspx" />
+    <Content Include="DL\add_student.aspx" />
+    <Content Include="DL\issue_book.aspx" />
+    <Content Include="DL\login_for_students.aspx" />
+    <Content Include="DL\register_email.aspx" />
+    <Content Include="DL\report_for _student.aspx" />
+    <Content Include="DL\report_on _issued_quantity.aspx" />
+    <Content Include="DL\report_on_issuedbook.aspx" />
+    <Content Include="DL\return_books.aspx" />
+    <Content Include="DL\sample_roll.aspx" />
+    <Content Include="DL\user.aspx" />
+    <Content Include="DL\Verification.aspx" />
+    <Content Include="DL\viewstudent.aspx" />
+    <Content Include="DL\dashboard.aspx" />
+    <Content Include="DL\publication.aspx" />
+    <Content Include="DL\author.aspx" />
+    <Content Include="DL\subject.aspx" />
+    <Content Include="DL\department.aspx" />
+    <Content Include="DL\aboutUs.aspx" />
+    <Content Include="DL\dashboard_student.aspx" />
+    <Content Include="DL\dashboard_teacher.aspx" />
+    <Content Include="DL\settings_admin.aspx" />
+    <Content Include="DL\issuebook_details.aspx" />
+    <Content Include="DL\issuebook_detailhistory.aspx" />
+    <Content Include="DL\settings_student.aspx" />
+    <Content Include="DL\book_student.aspx" />
+    <Content Include="DL\bookdetail_student.aspx" />
+    <Content Include="DL\subject_student.aspx" />
+    <Content Include="DL\subjectdetail_student.aspx" />
+    <Content Include="DL\aboutus_student.aspx" />
+    <Content Include="DL\issuebook_student.aspx" />
+    <Content Include="DL\teacher.aspx" />
+    <Content Include="DL\new_session.aspx" />
+    <Content Include="DL\choose_session.aspx" />
+    <Content Include="DL\viewteacher.aspx" />
+    <Content Include="DL\choose_for_issue.aspx" />
+    <Content Include="DL\issue_book_teacher.aspx" />
+    <Content Include="DL\issuebook_details_teacher.aspx" />
+    <Content Include="DL\issebook_detailhistory_teacher.aspx" />
+    <Content Include="DL\choose_for_return.aspx" />
+    <Content Include="DL\return_books_teacher.aspx" />
+    <Content Include="DL\warning_email.aspx" />
+    <Content Include="DL\viewbook.aspx" />
+    <Content Include="DL\WebForm1.aspx" />
+    <Content Include="DL\change_return_date.aspx" />
+    <Content Include="DL\change_no_of_issuedbook.aspx" />
+    <Content Include="DL\change_no_of_issuedbook_teacher.aspx" />
+    <Content Include="DL\allreport.aspx" />
+    <Content Include="DL\setting_other.aspx" />
+    <Content Include="Forget_password.htm" />
+    <Content Include="Images\avatar.png" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\book.png" />
+    <Content Include="Images\books.png" />
+    <Content Include="Images\contactus.png" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\first_day_school_calendar_back_back_to_school_student-512.png" />
+    <Content Include="Images\icons8-library-filled-50.png" />
+    <Content Include="Images\issue_book.png" />
+    <Content Include="Images\personal info.jpg" />
+    <Content Include="Images\refresh-512.png" />
+    <Content Include="Images\Report.png" />
+    <Content Include="Images\return_book.png" />
+    <Content Include="Images\settings.png" />
+    <Content Include="Images\student.png" />
+    <Content Include="Images\subject.png" />
+    <Content Include="Images\teachers-icon.png" />
+    <Content Include="Images\teachers.png" />
+    <Content Include="Images\uploader.png" />
+    <Content Include="Images\user1.png" />
+    <Content Include="Images\warning mail.jpg" />
+    <Content Include="login.css" />
+    <Content Include="Template\.gitignore" />
+    <Content Include="Template\blank.html" />
+    <Content Include="Template\cards.html" />
+    <Content Include="Template\charts.html" />
+    <Content Include="Template\css\sb-admin.css" />
+    <Content Include="Template\css\sb-admin.min.css" />
+    <Content Include="Template\forgot-password.html" />
+    <Content Include="Template\gulpfile.js" />
+    <Content Include="Template\index.html" />
+    <Content Include="Template\js\sb-admin-charts.js" />
+    <Content Include="Template\js\sb-admin-charts.min.js" />
+    <Content Include="Template\js\sb-admin-datatables.js" />
+    <Content Include="Template\js\sb-admin-datatables.min.js" />
+    <Content Include="Template\js\sb-admin.js" />
+    <Content Include="Template\js\sb-admin.min.js" />
+    <Content Include="Template\login.html" />
+    <Content Include="Template\navbar.html" />
+    <Content Include="Template\register.html" />
+    <Content Include="Template\SignUp.htm" />
+    <Content Include="Template\tables.html" />
+    <Content Include="Template\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Template\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Template\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Template\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Template\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Template\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Template\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Template\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Template\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Template\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Template\vendor\chart.js\Chart.bundle.js" />
+    <Content Include="Template\vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="Template\vendor\chart.js\Chart.js" />
+    <Content Include="Template\vendor\chart.js\Chart.min.js" />
+    <Content Include="Template\vendor\datatables\dataTables.bootstrap4.css" />
+    <Content Include="Template\vendor\datatables\dataTables.bootstrap4.js" />
+    <Content Include="Template\vendor\datatables\jquery.dataTables.js" />
+    <Content Include="Template\vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="Template\vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Template\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Template\vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="Template\vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="Template\vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="Template\vendor\jquery\jquery.js" />
+    <Content Include="Template\vendor\jquery\jquery.min.js" />
+    <Content Include="Template\vendor\jquery\jquery.slim.js" />
+    <Content Include="Template\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="Template\vendor\SignUp.htm" />
+    <Content Include="temp\css\sb-admin.css" />
+    <Content Include="temp\css\sb-admin.min.css" />
+    <Content Include="temp\gulpfile.js" />
+    <Content Include="temp\index.html" />
+    <Content Include="temp\inventory.jpg" />
+    <Content Include="temp\js\sb-admin-charts.js" />
+    <Content Include="temp\js\sb-admin-charts.min.js" />
+    <Content Include="temp\js\sb-admin-datatables.js" />
+    <Content Include="temp\js\sb-admin-datatables.min.js" />
+    <Content Include="temp\js\sb-admin.js" />
+    <Content Include="temp\js\sb-admin.min.js" />
+    <Content Include="SignUp.htm" />
+    <Content Include="temp\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="temp\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="temp\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="temp\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="temp\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="temp\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="temp\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="temp\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="temp\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="temp\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="temp\vendor\chart.js\Chart.bundle.js" />
+    <Content Include="temp\vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="temp\vendor\chart.js\Chart.js" />
+    <Content Include="temp\vendor\chart.js\Chart.min.js" />
+    <Content Include="temp\vendor\datatables\dataTables.bootstrap4.css" />
+    <Content Include="temp\vendor\datatables\dataTables.bootstrap4.js" />
+    <Content Include="temp\vendor\datatables\jquery.dataTables.js" />
+    <Content Include="temp\vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="temp\vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="temp\vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="temp\vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="temp\vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="temp\vendor\jquery\jquery.js" />
+    <Content Include="temp\vendor\jquery\jquery.min.js" />
+    <Content Include="temp\vendor\jquery\jquery.slim.js" />
+    <Content Include="temp\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="digital_libraryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>digital_libraryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="digital_libraryDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>digital_libraryDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="digital_libraryDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>digital_libraryDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="digital_libraryDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>digital_libraryDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DL\choose_for_login.aspx.cs">
+      <DependentUpon>choose_for_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\choose_for_login.aspx.designer.cs">
+      <DependentUpon>choose_for_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\DDL.Master.cs">
+      <DependentUpon>DDL.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\DDL.Master.designer.cs">
+      <DependentUpon>DDL.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DL\DLL.Master.cs">
+      <DependentUpon>DLL.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\DLL.Master.designer.cs">
+      <DependentUpon>DLL.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DL\email_engine.cs" />
+    <Compile Include="DL\forget_password.aspx.cs">
+      <DependentUpon>forget_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\forget_password.aspx.designer.cs">
+      <DependentUpon>forget_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\add_book.aspx.cs">
+      <DependentUpon>add_book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\add_book.aspx.designer.cs">
+      <DependentUpon>add_book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\add_student.aspx.cs">
+      <DependentUpon>add_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\add_student.aspx.designer.cs">
+      <DependentUpon>add_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\issue_book.aspx.cs">
+      <DependentUpon>issue_book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\issue_book.aspx.designer.cs">
+      <DependentUpon>issue_book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\login_for_students.aspx.cs">
+      <DependentUpon>login_for_students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\login_for_students.aspx.designer.cs">
+      <DependentUpon>login_for_students.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\register_email.aspx.cs">
+      <DependentUpon>register_email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\register_email.aspx.designer.cs">
+      <DependentUpon>register_email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\report_for _student.aspx.cs">
+      <DependentUpon>report_for _student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\report_for _student.aspx.designer.cs">
+      <DependentUpon>report_for _student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\report_on _issued_quantity.aspx.cs">
+      <DependentUpon>report_on _issued_quantity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\report_on _issued_quantity.aspx.designer.cs">
+      <DependentUpon>report_on _issued_quantity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\report_on_issuedbook.aspx.cs">
+      <DependentUpon>report_on_issuedbook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\report_on_issuedbook.aspx.designer.cs">
+      <DependentUpon>report_on_issuedbook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\return_books.aspx.cs">
+      <DependentUpon>return_books.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\return_books.aspx.designer.cs">
+      <DependentUpon>return_books.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\sample_roll.aspx.cs">
+      <DependentUpon>sample_roll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\sample_roll.aspx.designer.cs">
+      <DependentUpon>sample_roll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\user.aspx.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\user.aspx.designer.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\Verification.aspx.cs">
+      <DependentUpon>Verification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\Verification.aspx.designer.cs">
+      <DependentUpon>Verification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\viewstudent.aspx.cs">
+      <DependentUpon>viewstudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\viewstudent.aspx.designer.cs">
+      <DependentUpon>viewstudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\publication.aspx.cs">
+      <DependentUpon>publication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\publication.aspx.designer.cs">
+      <DependentUpon>publication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\author.aspx.cs">
+      <DependentUpon>author.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\author.aspx.designer.cs">
+      <DependentUpon>author.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\subject.aspx.cs">
+      <DependentUpon>subject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\subject.aspx.designer.cs">
+      <DependentUpon>subject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\department.aspx.cs">
+      <DependentUpon>department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\department.aspx.designer.cs">
+      <DependentUpon>department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\aboutUs.aspx.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\aboutUs.aspx.designer.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\dashboard_student.aspx.cs">
+      <DependentUpon>dashboard_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\dashboard_student.aspx.designer.cs">
+      <DependentUpon>dashboard_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\dashboard_teacher.aspx.cs">
+      <DependentUpon>dashboard_teacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\dashboard_teacher.aspx.designer.cs">
+      <DependentUpon>dashboard_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\settings_admin.aspx.cs">
+      <DependentUpon>settings_admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\settings_admin.aspx.designer.cs">
+      <DependentUpon>settings_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\issuebook_details.aspx.cs">
+      <DependentUpon>issuebook_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\issuebook_details.aspx.designer.cs">
+      <DependentUpon>issuebook_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\issuebook_detailhistory.aspx.cs">
+      <DependentUpon>issuebook_detailhistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\issuebook_detailhistory.aspx.designer.cs">
+      <DependentUpon>issuebook_detailhistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\settings_student.aspx.cs">
+      <DependentUpon>settings_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\settings_student.aspx.designer.cs">
+      <DependentUpon>settings_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\book_student.aspx.cs">
+      <DependentUpon>book_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\book_student.aspx.designer.cs">
+      <DependentUpon>book_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\bookdetail_student.aspx.cs">
+      <DependentUpon>bookdetail_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\bookdetail_student.aspx.designer.cs">
+      <DependentUpon>bookdetail_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\subject_student.aspx.cs">
+      <DependentUpon>subject_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\subject_student.aspx.designer.cs">
+      <DependentUpon>subject_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\subjectdetail_student.aspx.cs">
+      <DependentUpon>subjectdetail_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\subjectdetail_student.aspx.designer.cs">
+      <DependentUpon>subjectdetail_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\aboutus_student.aspx.cs">
+      <DependentUpon>aboutus_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\aboutus_student.aspx.designer.cs">
+      <DependentUpon>aboutus_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\issuebook_student.aspx.cs">
+      <DependentUpon>issuebook_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\issuebook_student.aspx.designer.cs">
+      <DependentUpon>issuebook_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\teacher.aspx.cs">
+      <DependentUpon>teacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\teacher.aspx.designer.cs">
+      <DependentUpon>teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\new_session.aspx.cs">
+      <DependentUpon>new_session.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\new_session.aspx.designer.cs">
+      <DependentUpon>new_session.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\choose_session.aspx.cs">
+      <DependentUpon>choose_session.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\choose_session.aspx.designer.cs">
+      <DependentUpon>choose_session.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\viewteacher.aspx.cs">
+      <DependentUpon>viewteacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\viewteacher.aspx.designer.cs">
+      <DependentUpon>viewteacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\choose_for_issue.aspx.cs">
+      <DependentUpon>choose_for_issue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\choose_for_issue.aspx.designer.cs">
+      <DependentUpon>choose_for_issue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\issue_book_teacher.aspx.cs">
+      <DependentUpon>issue_book_teacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\issue_book_teacher.aspx.designer.cs">
+      <DependentUpon>issue_book_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\issuebook_details_teacher.aspx.cs">
+      <DependentUpon>issuebook_details_teacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\issuebook_details_teacher.aspx.designer.cs">
+      <DependentUpon>issuebook_details_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\issebook_detailhistory_teacher.aspx.cs">
+      <DependentUpon>issebook_detailhistory_teacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\issebook_detailhistory_teacher.aspx.designer.cs">
+      <DependentUpon>issebook_detailhistory_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\choose_for_return.aspx.cs">
+      <DependentUpon>choose_for_return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\choose_for_return.aspx.designer.cs">
+      <DependentUpon>choose_for_return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\return_books_teacher.aspx.cs">
+      <DependentUpon>return_books_teacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\return_books_teacher.aspx.designer.cs">
+      <DependentUpon>return_books_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\warning_email.aspx.cs">
+      <DependentUpon>warning_email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\warning_email.aspx.designer.cs">
+      <DependentUpon>warning_email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\viewbook.aspx.cs">
+      <DependentUpon>viewbook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\viewbook.aspx.designer.cs">
+      <DependentUpon>viewbook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\change_return_date.aspx.cs">
+      <DependentUpon>change_return_date.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\change_return_date.aspx.designer.cs">
+      <DependentUpon>change_return_date.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\change_no_of_issuedbook.aspx.cs">
+      <DependentUpon>change_no_of_issuedbook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\change_no_of_issuedbook.aspx.designer.cs">
+      <DependentUpon>change_no_of_issuedbook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\change_no_of_issuedbook_teacher.aspx.cs">
+      <DependentUpon>change_no_of_issuedbook_teacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\change_no_of_issuedbook_teacher.aspx.designer.cs">
+      <DependentUpon>change_no_of_issuedbook_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\allreport.aspx.cs">
+      <DependentUpon>allreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\allreport.aspx.designer.cs">
+      <DependentUpon>allreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DL\setting_other.aspx.cs">
+      <DependentUpon>setting_other.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DL\setting_other.aspx.designer.cs">
+      <DependentUpon>setting_other.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ShowNepaliCitizen.ashx.cs">
+      <DependentUpon>ShowNepaliCitizen.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\StudentImage.ashx.cs">
+      <DependentUpon>StudentImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\TeacherImage.ashx.cs">
+      <DependentUpon>TeacherImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DIGITALLIBRARY_BUSINESS_FRAMEWORK\DIGITALLIBRARY_BUSINESS_FRAMEWORK.csproj">
+      <Project>{A3D068B5-CE5B-46FB-91FF-D3EFAB6EF13D}</Project>
+      <Name>DIGITALLIBRARY_BUSINESS_FRAMEWORK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DIGITALLIBRARY_DATA_FRAMEWORK\DIGITALLIBRARY_DATA_FRAMEWORK.csproj">
+      <Project>{1BB8947F-3526-442F-8CF9-3B8DFE06AA83}</Project>
+      <Name>DIGITALLIBRARY_DATA_FRAMEWORK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DL\DDL.Master" />
+    <Content Include="Handler\ShowNepaliCitizen.ashx" />
+    <Content Include="Handler\StudentImage.ashx" />
+    <Content Include="Handler\TeacherImage.ashx" />
+    <Content Include="DL\DLL.Master" />
+    <None Include="digital_libraryDataSet.xsc">
+      <DependentUpon>digital_libraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="digital_libraryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>digital_libraryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="digital_libraryDataSet.xss">
+      <DependentUpon>digital_libraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="digital_libraryDataSet11.xsc">
+      <DependentUpon>digital_libraryDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="digital_libraryDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>digital_libraryDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="digital_libraryDataSet11.xss">
+      <DependentUpon>digital_libraryDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="digital_libraryDataSet2.xsc">
+      <DependentUpon>digital_libraryDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="digital_libraryDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>digital_libraryDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="digital_libraryDataSet2.xss">
+      <DependentUpon>digital_libraryDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="digital_libraryDataSet3.xsc">
+      <DependentUpon>digital_libraryDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="digital_libraryDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>digital_libraryDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="digital_libraryDataSet3.xss">
+      <DependentUpon>digital_libraryDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Template\.jsbeautifyrc" />
+    <None Include="Template\.travis.yml" />
+    <None Include="Template\LICENSE" />
+    <None Include="Template\package-lock.json" />
+    <None Include="Template\package.json" />
+    <None Include="Template\pug\blank.pug" />
+    <None Include="Template\pug\cards.pug" />
+    <None Include="Template\pug\charts.pug" />
+    <None Include="Template\pug\forgot-password.pug" />
+    <None Include="Template\pug\includes\css\core.pug" />
+    <None Include="Template\pug\includes\css\custom.pug" />
+    <None Include="Template\pug\includes\footer.pug" />
+    <None Include="Template\pug\includes\js\core.pug" />
+    <None Include="Template\pug\includes\js\custom.pug" />
+    <None Include="Template\pug\includes\modals\logout.pug" />
+    <None Include="Template\pug\includes\navbar.pug" />
+    <None Include="Template\pug\includes\scroll-to-top.pug" />
+    <None Include="Template\pug\index.pug" />
+    <None Include="Template\pug\login.pug" />
+    <None Include="Template\pug\navbar.pug" />
+    <None Include="Template\pug\register.pug" />
+    <None Include="Template\pug\tables.pug" />
+    <None Include="Template\README.md" />
+    <None Include="Template\scss\navbar\_navbar_colors.scss" />
+    <None Include="Template\scss\navbar\_navbar_fixed.scss" />
+    <None Include="Template\scss\navbar\_navbar_global.scss" />
+    <None Include="Template\scss\navbar\_navbar_static.scss" />
+    <None Include="Template\scss\navbar\_navbar_toggle.scss" />
+    <None Include="Template\scss\sb-admin.scss" />
+    <None Include="Template\scss\_cards.scss" />
+    <None Include="Template\scss\_footer.scss" />
+    <None Include="Template\scss\_global.scss" />
+    <None Include="Template\scss\_login.scss" />
+    <None Include="Template\scss\_mixins.scss" />
+    <None Include="Template\scss\_utilities.scss" />
+    <None Include="Template\scss\_variables.scss" />
+    <None Include="Template\vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="Template\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="Template\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="Template\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="Template\vendor\bootstrap\js\bootstrap.js.map" />
+    <None Include="Template\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="Template\vendor\font-awesome\css\font-awesome.css.map" />
+    <None Include="Template\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="Template\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="Template\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="Template\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="Template\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="Template\vendor\font-awesome\less\animated.less" />
+    <None Include="Template\vendor\font-awesome\less\bordered-pulled.less" />
+    <None Include="Template\vendor\font-awesome\less\core.less" />
+    <None Include="Template\vendor\font-awesome\less\fixed-width.less" />
+    <None Include="Template\vendor\font-awesome\less\font-awesome.less" />
+    <None Include="Template\vendor\font-awesome\less\icons.less" />
+    <None Include="Template\vendor\font-awesome\less\larger.less" />
+    <None Include="Template\vendor\font-awesome\less\list.less" />
+    <None Include="Template\vendor\font-awesome\less\mixins.less" />
+    <None Include="Template\vendor\font-awesome\less\path.less" />
+    <None Include="Template\vendor\font-awesome\less\rotated-flipped.less" />
+    <None Include="Template\vendor\font-awesome\less\screen-reader.less" />
+    <None Include="Template\vendor\font-awesome\less\stacked.less" />
+    <None Include="Template\vendor\font-awesome\less\variables.less" />
+    <None Include="Template\vendor\font-awesome\scss\font-awesome.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_animated.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_core.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_fixed-width.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_icons.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_larger.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_list.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_mixins.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_path.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_screen-reader.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_stacked.scss" />
+    <None Include="Template\vendor\font-awesome\scss\_variables.scss" />
+    <None Include="Template\vendor\jquery\jquery.min.map" />
+    <None Include="Template\vendor\jquery\jquery.slim.min.map" />
+    <None Include="temp\pug\blank.pug" />
+    <None Include="temp\pug\cards.pug" />
+    <None Include="temp\pug\charts.pug" />
+    <None Include="temp\pug\forgot-password.pug" />
+    <None Include="temp\pug\includes\css\core.pug" />
+    <None Include="temp\pug\includes\css\custom.pug" />
+    <None Include="temp\pug\includes\footer.pug" />
+    <None Include="temp\pug\includes\js\core.pug" />
+    <None Include="temp\pug\includes\js\custom.pug" />
+    <None Include="temp\pug\includes\modals\logout.pug" />
+    <None Include="temp\pug\includes\navbar.pug" />
+    <None Include="temp\pug\includes\scroll-to-top.pug" />
+    <None Include="temp\pug\index.pug" />
+    <None Include="temp\pug\login.pug" />
+    <None Include="temp\pug\navbar.pug" />
+    <None Include="temp\pug\register.pug" />
+    <None Include="temp\pug\tables.pug" />
+    <None Include="temp\scss\navbar\_navbar_colors.scss" />
+    <None Include="temp\scss\navbar\_navbar_fixed.scss" />
+    <None Include="temp\scss\navbar\_navbar_global.scss" />
+    <None Include="temp\scss\navbar\_navbar_static.scss" />
+    <None Include="temp\scss\navbar\_navbar_toggle.scss" />
+    <None Include="temp\scss\sb-admin.scss" />
+    <None Include="temp\scss\_cards.scss" />
+    <None Include="temp\scss\_footer.scss" />
+    <None Include="temp\scss\_global.scss" />
+    <None Include="temp\scss\_login.scss" />
+    <None Include="temp\scss\_mixins.scss" />
+    <None Include="temp\scss\_utilities.scss" />
+    <None Include="temp\scss\_variables.scss" />
+    <None Include="temp\vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="temp\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="temp\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="temp\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="temp\vendor\bootstrap\js\bootstrap.js.map" />
+    <None Include="temp\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="temp\vendor\font-awesome\css\font-awesome.css.map" />
+    <None Include="temp\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="temp\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="temp\vendor\font-awesome\less\animated.less" />
+    <None Include="temp\vendor\font-awesome\less\bordered-pulled.less" />
+    <None Include="temp\vendor\font-awesome\less\core.less" />
+    <None Include="temp\vendor\font-awesome\less\fixed-width.less" />
+    <None Include="temp\vendor\font-awesome\less\font-awesome.less" />
+    <None Include="temp\vendor\font-awesome\less\icons.less" />
+    <None Include="temp\vendor\font-awesome\less\larger.less" />
+    <None Include="temp\vendor\font-awesome\less\list.less" />
+    <None Include="temp\vendor\font-awesome\less\mixins.less" />
+    <None Include="temp\vendor\font-awesome\less\path.less" />
+    <None Include="temp\vendor\font-awesome\less\rotated-flipped.less" />
+    <None Include="temp\vendor\font-awesome\less\screen-reader.less" />
+    <None Include="temp\vendor\font-awesome\less\stacked.less" />
+    <None Include="temp\vendor\font-awesome\less\variables.less" />
+    <None Include="temp\vendor\font-awesome\scss\font-awesome.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_animated.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_core.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_fixed-width.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_icons.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_larger.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_list.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_mixins.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_path.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_screen-reader.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_stacked.scss" />
+    <None Include="temp\vendor\font-awesome\scss\_variables.scss" />
+    <None Include="temp\vendor\jquery\jquery.min.map" />
+    <None Include="temp\vendor\jquery\jquery.slim.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Basic Electrical\" />
+    <Folder Include="Data\Chemistry\" />
+    <Folder Include="Data\C\" />
+    <Folder Include="Data\oopc\" />
+    <Folder Include="Data\Physics\" />
+    <Folder Include="Data\Thermal\" />
+    <Folder Include="Handler\App_LocalResources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Issued_quantityReport.rdlc" />
+    <EmbeddedResource Include="IssueReport.rdlc" />
+    <EmbeddedResource Include="StudentReport.rdlc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16390</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

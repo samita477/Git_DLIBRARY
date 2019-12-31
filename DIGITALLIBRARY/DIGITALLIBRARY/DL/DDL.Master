@@ -1,0 +1,166 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DDL.master.cs" Inherits="DIGITALLIBRARY.DL.DDL" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+ <title>DIGITAL LIBRARY</title>
+  <link id="Link1" runat="server" rel="shortcut icon" href="../favicon_SMS.ico" type="image/x-icon" />  
+<%--<link id="Link1"  runat="server" rel="icon" href="../favicon_SMS.ico" type="image/ico" /> --%>
+
+     <asp:ContentPlaceHolder ID="head" runat="server"> 
+      </asp:ContentPlaceHolder>       
+   
+  <link href="../temp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../temp/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="../temp/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="../temp/css/sb-admin.css" rel="stylesheet">
+   <script src="../temp/vendor/jquery/jquery.min.js"></script>
+    <script src="../temp/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+       <script src="../temp/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../temp/vendor/chart.js/Chart.min.js"></script>
+    <script src="../temp/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="../temp/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <script src="../temp/js/sb-admin.min.js"></script>
+    <script src="../temp/js/sb-admin-datatables.min.js"></script>
+    <script src="../temp/js/sb-admin-charts.min.js"></script>
+           <style type="text/css">
+        .style1
+        {
+            height: 50px;
+        }
+    </style>  
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top" unload="Home.ascx" >
+        <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">NEPAL ENGINEERING COLLEGE</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+     <% string context = Convert.ToString(Session["_User_Type"]);%>
+   <% if( context =="student")
+     {%>
+           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+           <a class="nav-link" href="dashboard_student.aspx">
+           <i class="fa fa-fwfa fa fa-dashboard"></i>
+            <span class="nav-link-text">Student Page</span>
+          </a>
+          </li>
+     <%   }%>
+        <% else if(context=="teacher")
+          {%>           
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="dashboard_teacher.aspx">
+          <i class="fa fa-fwfa fa fa-dashboard"></i>
+            <span class="nav-link-text">Teacher Page</span>
+          </a>
+           </li>
+
+       <%} %> 
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Department">
+          <a class="nav-link" href="book_student.aspx">
+            <i class="fa fa-building-o" ></i>
+            <span class="nav-link-text">Books </span>
+          </a>
+          </li>
+         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Subject">
+          <a class="nav-link" href="subject_student.aspx">
+            <i class="fab fa-gg-circle" ></i>
+            <span class="nav-link-text">Subject </span>
+          </a>
+          </li>
+       
+       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Issue Books">
+          <a class="nav-link" href="issuebook_student.aspx">
+          <i class="fa fa-fwfa fa fa-cloud-upload"></i>
+            <span class="nav-link-text">Issued Books</span>
+          </a>
+           </li>
+           
+           <li class="nav-item" data-toggle="tooltip" data-placement="right" title="User">
+          <a class="nav-link" href="settings_student.aspx">
+            <i class="fa fa-wrench" ></i>
+            <span class="nav-link-text">Settings </span>
+          </a>
+        </li>
+       
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="About US">
+          <a class="nav-link" href="aboutus_student.aspx">
+            <i class="fa fa-phone" ></i>
+            <span class="nav-link-text">About Us </span>
+          </a>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left">
+            </i>
+          </a>
+        </li>
+        </ul>
+         <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" foreColor="White">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+       <div>
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>     
+  </div>
+       <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright @DIGITAL LIBRARY</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="choose_for_login.aspx">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      </form>
+      <script type="text/javascript" src="../temp/vendor/jquery/jquery.min.js"></script>
+    <script  type="text/javascript"  src="../temp/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+       <script  type="text/javascript"src="../temp/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script  type="text/javascript"  src="../temp/vendor/chart.js/Chart.min.js"></script>
+    <script   type="text/javascript" src="../temp/vendor/datatables/jquery.dataTables.js"></script>
+    <script type="text/javascript"  src="../temp/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <script  type="text/javascript" src="../temp/js/sb-admin.min.js"></script>
+    <script  type="text/javascript" src="../temp/js/sb-admin-datatables.min.js"></script>
+    <script  type="text/javascript" src="../temp/js/sb-admin-charts.min.js"></script>
+</body>
+</html>
