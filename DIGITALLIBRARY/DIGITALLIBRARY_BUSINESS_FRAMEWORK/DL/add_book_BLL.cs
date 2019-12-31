@@ -24,6 +24,7 @@ namespace DIGITALLIBRARY_BUSINESS_FRAMEWORK.DL
         public DataTable bindpublication(DBcontainer db)
         {
             return obj.bindpublication(db);
+            //bvgfxhh;
         }
 
       
