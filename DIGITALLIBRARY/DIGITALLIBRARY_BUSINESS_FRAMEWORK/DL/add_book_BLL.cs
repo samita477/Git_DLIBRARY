@@ -17,6 +17,8 @@ namespace DIGITALLIBRARY_BUSINESS_FRAMEWORK.DL
         public DataTable bindauthor(DBcontainer db)
         {
             return obj.bindauthor(db);
+
+            //ghygcfxfx
         }
 
         public DataTable bindpublication(DBcontainer db)
